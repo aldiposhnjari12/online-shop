@@ -1,0 +1,12 @@
+<div class="navigation border-t border-slate-200 flex items-center">
+
+  <div class="text-base flex items-center mx-auto navigation__menu">
+    <div *ngFor="let nav of navs" class="py-3 px-6 hover:bg-slate-50 hover:text-emerald-400 flex cursor-pointer transition">
+      {{nav.name}}
+    </div>
+  </div>
+
+  <button mat-icon-button class="navbar-toggle ml-auto" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</div>
